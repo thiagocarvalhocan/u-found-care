@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import { ActivatedRoute, RouterLink, RouterOutlet } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { BurgerComponent } from "./components/burger/burger.component";
+import {SearchComponent} from './components/search/search.component';
 import { CommonModule } from '@angular/common';
 import { Router }          from '@angular/router'; //implementing Constructor(private router: Router) 
 
@@ -13,7 +13,7 @@ import { Router }          from '@angular/router'; //implementing Constructor(pr
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, HomeComponent, FooterComponent, BurgerComponent, CommonModule, RouterLink]
+    imports: [RouterOutlet, HomeComponent, FooterComponent, SearchComponent, CommonModule, RouterLink]
 })
 
 

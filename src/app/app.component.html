@@ -24,9 +24,10 @@
             after:duration-500
             "></div>
         </button>
-        <nav class=" hidden md:block space-x-8 text-xl" aria-label="main">
+        <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
             <a href="#find" class="hover:opacity-90">Find</a>
             <a href="#provide" class="hover:opacity-90">Provide</a>
+            <a href="#theapp" class="hover:opacity-90">The App</a>
             <a href="#testmonials" class="hover:opacity-90">Testmonials</a>
             <a href="#contact" class="hover:opacity-90">Contact Us</a>
 
@@ -35,7 +36,7 @@
     </section>
 
     <section id="mobile-menu"
-        class="absolute top-68 bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu "
+        class="absolute top-68 bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden"
         [ngClass]="{hidden:!isActive}">
         <!--tem que remover hidden pra aparecer menu-->
         <button class="text-7xl self-end px-6 " (click)="closeMenu()">&times;</button>
@@ -46,6 +47,8 @@
                 class="w-full text-center py-6 hover:opacity-90">Find</button>
             <button routerLink="" fragment="provide" (click)="closeMenu()"
                 class="w-full text-center py-6 hover:opacity-90">Provide</button>
+            <button routerLink="" fragment="theapp" (click)="closeMenu()"
+                class="w-full text-center py-6 hover:opacity-90">The App</button>
             <button routerLink="" fragment="testmonials" (click)="closeMenu()"
                 class="w-full text-center py-6 hover:opacity-90">Testmonials</button>
             <button routerLink="" fragment="contact" (click)="closeMenu()"
