@@ -5,11 +5,10 @@ import { Router }          from '@angular/router'; //implementing Constructor(pr
 
 
 @Component({
-  selector: 'app-menu',
-  standalone: true,
-  imports: [RouterLink, RouterOutlet, CommonModule],
-  templateUrl: './menu.component.html',
-  styleUrl: './menu.component.css'
+    selector: 'app-menu',
+    imports: [RouterLink, RouterOutlet, CommonModule],
+    templateUrl: './menu.component.html',
+    styleUrl: './menu.component.css'
 })
 export class MenuComponent implements OnInit{
   constructor(private activatedRoute: ActivatedRoute, private router: Router) {}

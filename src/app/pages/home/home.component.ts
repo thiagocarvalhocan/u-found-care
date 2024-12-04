@@ -9,11 +9,10 @@ import { TestimonialsComponent } from '../../components/testimonials/testimonial
 import {RouterLink} from '@angular/router'
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [RouterLink, FooterComponent, MenuComponent, ContactComponent, TheAppComponent, ProvideComponent, FindComponent, TestimonialsComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+    selector: 'app-home',
+    imports: [RouterLink, FooterComponent, MenuComponent, ContactComponent, TheAppComponent, ProvideComponent, FindComponent, TestimonialsComponent],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css'
 })
 export class HomeComponent {
 
